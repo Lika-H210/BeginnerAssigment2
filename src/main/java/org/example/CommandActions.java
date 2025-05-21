@@ -26,10 +26,7 @@ public class CommandActions {
         .max()
         .orElse(0) + 1;
 
-    Student student = new Student();
-    student.setName(name);
-    student.setScore(score);
-    student.setId(id);
+    Student student = new Student(id, name, score);
 
     studentList.add(student);
   }
